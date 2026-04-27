@@ -181,11 +181,33 @@
   form.addEventListener('submit', function (e) {
     e.preventDefault();
     if (!validate()) {
-      // Scroll to first error
       var firstError = form.querySelector('.has-error');
       if (firstError) firstError.scrollIntoView({ behavior: 'smooth', block: 'center' });
       return;
     }
+
+    // Build WhatsApp message from form fields
+    var name      = document.getElementById('name').value.trim();
+    var phone     = document.getElementById('phone').value.trim();
+    var eventType = document.getElementById('event-type');
+    var eventLabel = eventType.options[eventType.selectedIndex].text;
+    var date      = document.getElementById('event-date').value;
+    var guests    = document.getElementById('guests').value;
+    var message   = document.getElementById('message').value.trim();
+
+    var text =
+      'Hello Rasa Caterers! 🙏\n\n' +
+      '📋 *New Enquiry*\n' +
+      '👤 Name: ' + name + '\n' +
+      '📞 Phone: ' + phone + '\n' +
+      '🎉 Event: ' + eventLabel + '\n' +
+      (date    ? '📅 Date: ' + date + '\n'          : '') +
+      (guests  ? '👥 Guests: ' + guests + '\n'      : '') +
+      '💬 Details: ' + message;
+
+    var waURL = 'https://wa.me/918454931283?text=' + encodeURIComponent(text);
+    window.open(waURL, '_blank');
+
     form.hidden = true;
     formSuccess.hidden = false;
     formSuccess.scrollIntoView({ behavior: 'smooth', block: 'center' });
