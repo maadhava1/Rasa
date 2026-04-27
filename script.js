@@ -206,7 +206,13 @@
       '💬 Details: ' + message;
 
     var waURL = 'https://wa.me/918454931283?text=' + encodeURIComponent(text);
-    window.open(waURL, '_blank');
+    var a = document.createElement('a');
+    a.href = waURL;
+    a.target = '_blank';
+    a.rel = 'noopener noreferrer';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
 
     form.hidden = true;
     formSuccess.hidden = false;
