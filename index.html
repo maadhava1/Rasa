@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rasa Caterers — Mumbai's Premier Catering Service</title>
+  <meta name="description" content="Rasa Caterers, Mumbai — weddings, corporate events, pujas and daily thalis. Authentic Indian cuisine served across Bandra, Juhu, Dadar and beyond since 2003." />
+  <meta property="og:title" content="Rasa Caterers — Mumbai" />
+  <meta property="og:description" content="From intimate pujas to grand weddings — every flavour, every feast." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===================== HEADER ===================== -->
+  <header id="site-header">
+    <div class="container header-inner">
+      <a href="#hero" class="logo" aria-label="Rasa Caterers — Home">
+        <span class="logo-rasa">Rasa</span>
+        <span class="logo-sub">Caterers · Mumbai</span>
+      </a>
+      <nav id="primary-nav" aria-label="Primary navigation">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#testimonials">Stories</a></li>
+          <li><a href="#contact" class="nav-cta">Book Now</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="nav-overlay">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile nav overlay -->
+  <div class="nav-overlay" id="nav-overlay" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Navigation menu">
+    <button class="nav-overlay__close" id="nav-close" aria-label="Close menu">✕</button>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#testimonials">Stories</a></li>
+      <li><a href="#contact">Book Now</a></li>
+    </ul>
+  </div>
+
+  <main>
+
+    <!-- ===================== HERO ===================== -->
+    <section id="hero">
+      <div class="hero-bg" aria-hidden="true">
+        <img
+          src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=1800&q=80"
+          alt=""
+          loading="eager"
+          fetchpriority="high"
+        />
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="container hero-content">
+        <p class="hero-overline">Est. 2003 · Mumbai</p>
+        <h1>From Bandra<br>to Colaba —<br><em>Every Flavour,<br>Every Feast.</em></h1>
+        <p class="hero-sub">We bring the soul of Mumbai to your table — weddings, celebrations, and corporate gatherings done the way only a Mumbaikar knows how.</p>
+        <div class="hero-ctas">
+          <a href="#contact" class="btn btn-primary">Book Your Event</a>
+          <a href="#menu" class="btn btn-ghost">Explore Our Menu</a>
+        </div>
+        <div class="hero-badges">
+          <span>🏅 FSSAI Certified</span>
+          <span>⭐ 4.9 on Google</span>
+          <span>🍽️ 8,000+ Events</span>
+        </div>
+      </div>
+      <a href="#about" class="hero-scroll" aria-label="Scroll down">
+        <span class="scroll-line"></span>
+        <span>Scroll</span>
+      </a>
+    </section>
+
+    <!-- ===================== MARQUEE TICKER ===================== -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span>Weddings</span><span class="ticker-dot">✦</span>
+        <span>Corporate Events</span><span class="ticker-dot">✦</span>
+        <span>Ganesh Chaturthi</span><span class="ticker-dot">✦</span>
+        <span>Diwali Feasts</span><span class="ticker-dot">✦</span>
+        <span>Daily Thalis</span><span class="ticker-dot">✦</span>
+        <span>Engagement Ceremonies</span><span class="ticker-dot">✦</span>
+        <span>Birthday Parties</span><span class="ticker-dot">✦</span>
+        <span>Navratri Specials</span><span class="ticker-dot">✦</span>
+        <!-- duplicate for seamless loop -->
+        <span>Weddings</span><span class="ticker-dot">✦</span>
+        <span>Corporate Events</span><span class="ticker-dot">✦</span>
+        <span>Ganesh Chaturthi</span><span class="ticker-dot">✦</span>
+        <span>Diwali Feasts</span><span class="ticker-dot">✦</span>
+        <span>Daily Thalis</span><span class="ticker-dot">✦</span>
+        <span>Engagement Ceremonies</span><span class="ticker-dot">✦</span>
+        <span>Birthday Parties</span><span class="ticker-dot">✦</span>
+        <span>Navratri Specials</span><span class="ticker-dot">✦</span>
+      </div>
+    </div>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section id="about" class="section section-reveal">
+      <div class="container about-grid">
+        <div class="about-image-wrap">
+          <img
+            src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=80"
+            alt="Rasa Caterers kitchen — our chefs preparing a feast"
+            loading="lazy"
+            class="about-img"
+          />
+          <div class="about-badge">
+            <span class="badge-num">20+</span>
+            <span class="badge-label">Years of<br>Excellence</span>
+          </div>
+        </div>
+        <div class="about-text">
+          <p class="overline">Our Story</p>
+          <h2>Dharavi-born.<br>Mumbai-raised.<br>World-class.</h2>
+          <blockquote class="about-pull">"Food is how Mumbai says <em>I love you.</em>"<cite>— Suresh Malvankar, Founder</cite></blockquote>
+          <p>Rasa began in a small kitchen in Dharavi in 2003, with Suresh Malvankar's grandmother's recipes and a dream to bring authentic Indian flavours to every corner of Mumbai. Two decades on, we've catered over 8,000 events across the city.</p>
+          <p>From intimate home pujas in Dadar to grand weddings at the Taj Lands End, we cook with the same love — local ingredients, traditional methods, and an unwavering commitment to making every guest feel like family.</p>
+          <p>Our team of 60 chefs and catering professionals serve every cuisine Mumbai loves: Maharashtrian, Mughlai, South Indian, Continental, and everything in between.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== STATS ===================== -->
+    <section class="stats-band section-reveal" aria-label="Our achievements">
+      <div class="container stats-grid">
+        <div class="stat-item">
+          <span class="stat-num" data-target="8000">0</span><span class="stat-suffix">+</span>
+          <p class="stat-label">Events Catered</p>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num" data-target="60">0</span><span class="stat-suffix">+</span>
+          <p class="stat-label">Expert Chefs</p>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num" data-target="20">0</span><span class="stat-suffix">+</span>
+          <p class="stat-label">Years in Mumbai</p>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num" data-target="99">0</span><span class="stat-suffix">%</span>
+          <p class="stat-label">Happy Clients</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SERVICES ===================== -->
+    <section id="services" class="section section-reveal">
+      <div class="container">
+        <p class="overline">What We Offer</p>
+        <h2 class="section-heading">Every Occasion,<br>Perfectly Served.</h2>
+        <div class="services-grid">
+
+          <div class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <span class="service-num" aria-hidden="true">01</span>
+            <h3>Wedding Catering</h3>
+            <p>Full-service wedding catering — from mehendi to reception. Multi-cuisine menus, live stations, and dedicated event managers who've seen it all.</p>
+            <a href="#contact" class="service-link">Enquire →</a>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg>
+            </div>
+            <span class="service-num" aria-hidden="true">02</span>
+            <h3>Corporate Events</h3>
+            <p>Breakfast briefings to gala dinners. We've served Nariman Point boardrooms and BKC conference halls with equal precision and flair.</p>
+            <a href="#contact" class="service-link">Enquire →</a>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            </div>
+            <span class="service-num" aria-hidden="true">03</span>
+            <h3>Puja &amp; Festival Feasts</h3>
+            <p>Ganesh Chaturthi, Diwali, Navratri — we prepare sattvic and festive menus that honour tradition and delight every generation at the table.</p>
+            <a href="#contact" class="service-link">Enquire →</a>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg>
+            </div>
+            <span class="service-num" aria-hidden="true">04</span>
+            <h3>Home Delivery Thalis</h3>
+            <p>Daily thalis delivering the full Mumbai experience — straight to Bandra, Andheri, Chembur, and beyond. Minimum 10 thalis per order.</p>
+            <a href="#contact" class="service-link">Enquire →</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== MENU ===================== -->
+    <section id="menu" class="section section-reveal">
+      <div class="container menu-header">
+        <p class="overline">Signature Dishes</p>
+        <h2 class="section-heading">The Thali<br>of Mumbai.</h2>
+        <p class="section-lead">Six dishes from our rotating repertoire — each one a story of where India's flavours meet Mumbai's spirit.</p>
+      </div>
+      <div class="menu-grid">
+
+        <article class="dish-card">
+          <div class="dish-img-wrap">
+            <img src="https://images.unsplash.com/photo-1606491956689-2ea866880c84?auto=format&fit=crop&w=600&q=80" alt="Pav Bhaji — spiced vegetable mash with buttered buns" loading="lazy" />
+          </div>
+          <div class="dish-info">
+            <p class="dish-tag">Mumbai Classic</p>
+            <h3 class="dish-name">Pav Bhaji</h3>
+            <p class="dish-desc">Mumbai's street soul — spiced vegetable mash, buttered pav, fresh garnish. No wedding is complete without it.</p>
+            <p class="dish-price">from ₹ 280 <span>/ head</span></p>
+          </div>
+        </article>
+
+        <article class="dish-card">
+          <div class="dish-img-wrap">
+            <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=600&q=80" alt="Lucknawi Biryani — slow cooked dum biryani" loading="lazy" />
+          </div>
+          <div class="dish-info">
+            <p class="dish-tag">Mughlai Heritage</p>
+            <h3 class="dish-name">Lucknawi Biryani</h3>
+            <p class="dish-desc">Slow-cooked dum biryani, aged basmati, saffron milk, whole spices. The royal table, brought to yours.</p>
+            <p class="dish-price">from ₹ 420 <span>/ head</span></p>
+          </div>
+        </article>
+
+        <article class="dish-card">
+          <div class="dish-img-wrap">
+            <img src="https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=600&q=80" alt="Coastal Surmai Curry — King fish in Konkan coconut gravy" loading="lazy" />
+          </div>
+          <div class="dish-info">
+            <p class="dish-tag">Coastal Konkan</p>
+            <h3 class="dish-name">Coastal Surmai Curry</h3>
+            <p class="dish-desc">King fish in a Konkan coconut gravy — the dish that reminds every Mumbaikar of Sunday afternoon.</p>
+            <p class="dish-price">from ₹ 380 <span>/ head</span></p>
+          </div>
+        </article>
+
+        <article class="dish-card">
+          <div class="dish-img-wrap">
+            <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=600&q=80" alt="Dal Baati Churma — Rajasthani baked wheat balls with lentils" loading="lazy" />
+          </div>
+          <div class="dish-info">
+            <p class="dish-tag">Rajasthani Heritage</p>
+            <h3 class="dish-name">Dal Baati Churma</h3>
+            <p class="dish-desc">Baked wheat balls, five-lentil dal, crumbled churma with ghee. Rajasthan on a Mumbai table.</p>
+            <p class="dish-price">from ₹ 320 <span>/ head</span></p>
+          </div>
+        </article>
+
+        <article class="dish-card">
+          <div class="dish-img-wrap">
+            <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=600&q=80" alt="Modak Platter — steamed and fried coconut modaks" loading="lazy" />
+          </div>
+          <div class="dish-info">
+            <p class="dish-tag">Festival Special</p>
+            <h3 class="dish-name">Modak Platter</h3>
+            <p class="dish-desc">Steamed and fried modaks — Ganpati's favourite sweet, made with fresh coconut and jaggery filling.</p>
+            <p class="dish-price">from ₹ 180 <span>/ head</span></p>
+          </div>
+        </article>
+
+        <article class="dish-card">
+          <div class="dish-img-wrap">
+            <img src="https://images.unsplash.com/photo-1603360946369-dc9bb6258143?auto=format&fit=crop&w=600&q=80" alt="Seekh Kebab Platter — charcoal grilled minced lamb kebabs" loading="lazy" />
+          </div>
+          <div class="dish-info">
+            <p class="dish-tag">Live Grill Station</p>
+            <h3 class="dish-name">Seekh Kebab Platter</h3>
+            <p class="dish-desc">Charcoal-grilled minced lamb seekh, mint chutney, sliced onions. The live grill station favourite.</p>
+            <p class="dish-price">from ₹ 340 <span>/ head</span></p>
+          </div>
+        </article>
+
+      </div>
+      <div class="container menu-cta-wrap">
+        <a href="#contact" class="btn btn-primary">Request Full Menu PDF</a>
+      </div>
+    </section>
+
+    <!-- ===================== GALLERY ===================== -->
+    <section id="gallery" class="section section-reveal">
+      <div class="container">
+        <p class="overline">A Feast for the Eyes</p>
+        <h2 class="section-heading">Moments We've<br>Been Part Of.</h2>
+      </div>
+      <div class="gallery-grid">
+        <figure class="gallery-item g-tall">
+          <img src="https://images.unsplash.com/photo-1567620832903-9fc6debc209f?auto=format&fit=crop&w=700&q=80" alt="Ganesh Chaturthi feast spread — modaks, pedas and festive thali" loading="lazy" />
+          <figcaption>Ganesh Chaturthi Spread, 2024</figcaption>
+        </figure>
+        <figure class="gallery-item g-short">
+          <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=700&q=80" alt="Corporate lunch buffet at Bandra Kurla Complex" loading="lazy" />
+          <figcaption>Corporate Lunch, BKC</figcaption>
+        </figure>
+        <figure class="gallery-item g-mid">
+          <img src="https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?auto=format&fit=crop&w=700&q=80" alt="Wedding banquet at Taj Lands End, Bandra" loading="lazy" />
+          <figcaption>Wedding Banquet, Taj Lands End</figcaption>
+        </figure>
+        <figure class="gallery-item g-short">
+          <img src="https://images.unsplash.com/photo-1565557623262-b51f2cdc9eff?auto=format&fit=crop&w=700&q=80" alt="Navratri sattvic thali — traditional fasting foods" loading="lazy" />
+          <figcaption>Navratri Sattvic Thali</figcaption>
+        </figure>
+        <figure class="gallery-item g-tall">
+          <img src="https://images.unsplash.com/photo-1567337710282-00832b415979?auto=format&fit=crop&w=700&q=80" alt="Live kebab grill station at Juhu Beach wedding" loading="lazy" />
+          <figcaption>Live Grill Station, Juhu</figcaption>
+        </figure>
+        <figure class="gallery-item g-mid">
+          <img src="https://images.unsplash.com/photo-1596797038530-2c107229654b?auto=format&fit=crop&w=700&q=80" alt="Diwali mithai and sweet hamper spread" loading="lazy" />
+          <figcaption>Diwali Mithai Spread</figcaption>
+        </figure>
+        <figure class="gallery-item g-short">
+          <img src="https://images.unsplash.com/photo-1631452180519-462f004c5eb5?auto=format&fit=crop&w=700&q=80" alt="Breakfast buffet at Nariman Point office" loading="lazy" />
+          <figcaption>Breakfast Buffet, Nariman Point</figcaption>
+        </figure>
+        <figure class="gallery-item g-mid">
+          <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=700&q=80" alt="Engagement ceremony feast in Dadar" loading="lazy" />
+          <figcaption>Engagement Ceremony, Dadar</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===================== TESTIMONIALS ===================== -->
+    <section id="testimonials" class="section section-reveal">
+      <div class="container">
+        <p class="overline">What Mumbai is Saying</p>
+        <h2 class="section-heading">Stories from<br>Our Guests.</h2>
+      </div>
+      <div class="testimonials-grid container">
+
+        <div class="testi-card">
+          <div class="testi-stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p class="testi-quote">"Rasa catered our daughter's wedding at Sun &amp; Sand Hotel in Juhu. 600 guests, 14 dishes, not a single complaint. The Biryani live station had people going back for thirds."</p>
+          <div class="testi-author">
+            <div class="testi-avatar" aria-hidden="true">P</div>
+            <div>
+              <strong>Priya &amp; Ramesh Mehta</strong>
+              <span>Juhu, Mumbai</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi-card testi-card--featured">
+          <div class="testi-stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p class="testi-quote">"We've used Rasa for our annual all-hands at our BKC office for three years running. Professional, punctual, and the food is genuinely exceptional — not 'corporate catering good', just good."</p>
+          <div class="testi-author">
+            <div class="testi-avatar" aria-hidden="true">A</div>
+            <div>
+              <strong>Aditya Kulkarni</strong>
+              <span>Head of Operations, BKC</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi-card">
+          <div class="testi-stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p class="testi-quote">"Our Ganesh Chaturthi puja was made completely stress-free by the Rasa team. The sattvic thali was authentic and beautiful. Suresh bhai personally ensured everything ran on time."</p>
+          <div class="testi-author">
+            <div class="testi-avatar" aria-hidden="true">S</div>
+            <div>
+              <strong>Sunita Desai</strong>
+              <span>Dadar West, Mumbai</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="container testi-google">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" width="54" loading="lazy" />
+        <span>⭐ <strong>4.9</strong> · 312 reviews</span>
+      </div>
+    </section>
+
+    <!-- ===================== CTA BAND ===================== -->
+    <div class="cta-band section-reveal">
+      <div class="container cta-band-inner">
+        <div>
+          <h2>Planning an event in Mumbai?</h2>
+          <p>Get a free customised menu and quote within 24 hours.</p>
+        </div>
+        <a href="#contact" class="btn btn-primary">Get a Free Quote</a>
+      </div>
+    </div>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section id="contact" class="section section-reveal">
+      <div class="container contact-grid">
+
+        <div class="contact-info">
+          <p class="overline">Get In Touch</p>
+          <h2>Let's Plan<br>Your Feast.</h2>
+          <ul class="contact-details">
+            <li>
+              <span class="detail-icon" aria-hidden="true">📍</span>
+              <div>
+                <span class="detail-label">Address</span>
+                <span>Shop 14, Linking Road,<br>Bandra West, Mumbai — 400050</span>
+              </div>
+            </li>
+            <li>
+              <span class="detail-icon" aria-hidden="true">📞</span>
+              <div>
+                <span class="detail-label">Phone</span>
+                <a href="tel:+912226001234">+91 22 2600 1234</a>
+              </div>
+            </li>
+            <li>
+              <span class="detail-icon" aria-hidden="true">✉️</span>
+              <div>
+                <span class="detail-label">Email</span>
+                <a href="mailto:hello@rasacaterers.in">hello@rasacaterers.in</a>
+              </div>
+            </li>
+            <li>
+              <span class="detail-icon" aria-hidden="true">🕐</span>
+              <div>
+                <span class="detail-label">Hours</span>
+                <span>Mon – Sat, 9 am – 7 pm</span>
+              </div>
+            </li>
+          </ul>
+          <div class="map-embed" aria-label="Map: Linking Road, Bandra West, Mumbai">
+            <iframe
+              title="Rasa Caterers location on map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.3345!2d72.8347!3d19.0596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c9b888ae67fd%3A0x82b27e2ee33c9c4!2sLinking%20Rd%2C%20Bandra%20West%2C%20Mumbai!5e0!3m2!1sen!2sin!4v1"
+              width="100%" height="220"
+              style="border:0;border-radius:6px;filter:sepia(20%) contrast(0.9);"
+              allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap">
+          <form id="contact-form" novalidate aria-label="Booking enquiry form">
+            <div class="form-row">
+              <div class="form-field">
+                <label for="name">Full Name <span aria-hidden="true">*</span></label>
+                <input type="text" id="name" name="name" autocomplete="name" placeholder="Rahul Sharma" required />
+                <span class="field-error" role="alert" id="name-error"></span>
+              </div>
+              <div class="form-field">
+                <label for="phone">Phone Number <span aria-hidden="true">*</span></label>
+                <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="98765 43210" required />
+                <span class="field-error" role="alert" id="phone-error"></span>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="event-type">Event Type <span aria-hidden="true">*</span></label>
+                <div class="select-wrap">
+                  <select id="event-type" name="event-type" required>
+                    <option value="">— Select event —</option>
+                    <option value="wedding">Wedding</option>
+                    <option value="corporate">Corporate Event</option>
+                    <option value="festival">Puja / Festival</option>
+                    <option value="birthday">Birthday / Anniversary</option>
+                    <option value="thali">Daily Thali Delivery</option>
+                    <option value="other">Other</option>
+                  </select>
+                  <span class="select-arrow" aria-hidden="true">▾</span>
+                </div>
+                <span class="field-error" role="alert" id="event-error"></span>
+              </div>
+              <div class="form-field">
+                <label for="guests">No. of Guests</label>
+                <input type="number" id="guests" name="guests" placeholder="e.g. 150" min="1" />
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="event-date">Event Date</label>
+              <input type="date" id="event-date" name="event-date" />
+            </div>
+            <div class="form-field">
+              <label for="message">Tell Us More <span aria-hidden="true">*</span></label>
+              <textarea id="message" name="message" rows="4" placeholder="Venue, dietary needs, cuisine preferences…" required></textarea>
+              <span class="field-error" role="alert" id="message-error"></span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Send Enquiry →</button>
+            <p class="form-note">We'll get back to you within 24 hours. No spam, ever.</p>
+          </form>
+          <div class="form-success" id="form-success" hidden aria-live="polite">
+            <span class="success-icon" aria-hidden="true">✦</span>
+            <h3>Shukriya! We've received your enquiry.</h3>
+            <p>Our team will call you back within 24 hours. For urgent bookings call <a href="tel:+912226001234">+91 22 2600 1234</a>.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer id="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <p class="footer-logo">Rasa</p>
+        <p class="footer-tagline">Caterers of Mumbai.<br>Serving the city since 2003.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram" class="social-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="#" aria-label="WhatsApp" class="social-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21"/><path d="M9 10c0 5 3.5 7.5 7 7.5"/></svg>
+          </a>
+          <a href="#" aria-label="Facebook" class="social-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <p class="footer-col-title">Quick Links</p>
+        <nav aria-label="Footer navigation">
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#menu">Our Menu</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer-col">
+        <p class="footer-col-title">We Serve</p>
+        <ul class="footer-areas">
+          <li>Bandra &amp; Khar</li>
+          <li>Juhu &amp; Andheri</li>
+          <li>Dadar &amp; Matunga</li>
+          <li>Nariman Point</li>
+          <li>Bandra Kurla Complex</li>
+          <li>Chembur &amp; Powai</li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <p class="footer-col-title">Certifications</p>
+        <ul class="footer-certs">
+          <li>🏅 FSSAI Lic. 11224999000742</li>
+          <li>✅ ISO 22000:2018 Certified</li>
+          <li>⭐ Google Rating 4.9 / 5</li>
+          <li>🥇 Best Caterer Award — HT Mumbai 2022</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>&copy; 2024 Rasa Caterers Pvt. Ltd. · Bandra West, Mumbai</p>
+        <p>Built with ❤️ in Mumbai</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/918454931283?text=Hi%2C%20I%27d%20like%20to%20enquire%20about%20catering%20for%20my%20event." class="whatsapp-fab" aria-label="Chat on WhatsApp" target="_blank" rel="noopener noreferrer">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+    <span>Chat with us</span>
+  </a>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
