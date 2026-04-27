@@ -3,7 +3,8 @@
     "allow": [
       "Bash(ngrok version *)",
       "Bash(ngrok http *)",
-      "Bash(npx serve *)"
+      "Bash(npx serve *)",
+      "WebFetch(domain:images.unsplash.com)"
     ]
   }
 }
